@@ -6,11 +6,6 @@ pipeline {
         nodejs 'node'
     }
     stages {
-        stage("Install") {
-            steps {
-                sh "npm install"
-            }
-        }
         stage('Build') {
             steps {
                 sh 'nodejs --version'
